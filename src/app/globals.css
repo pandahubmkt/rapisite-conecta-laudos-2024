@@ -1,11 +1,20 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 255, 255, 255;
-  --background-end-rgb: 255, 255, 255;
+@theme {
+  --color-conecta-orange: #F57E29;
+  --color-conecta-orange-light: #FFFAF5;
+  --color-conecta-orange-dark: #D6661E;
+  --color-conecta-gray-50: #F9FAFB;
+  --color-conecta-gray-100: #F3F4F6;
+  --color-conecta-gray-200: #E5E7EB;
+  --color-conecta-gray-600: #4B5563;
+  --color-conecta-gray-900: #111827;
+  
+  --shadow-premium: 0 10px 40px -10px rgba(245, 126, 41, 0.1);
+  --shadow-premium-hover: 0 20px 50px -12px rgba(245, 126, 41, 0.2);
+  
+  --radius-2xl: 1.25rem;
+  --radius-3xl: 1.5rem;
 }
 
 @layer base {
@@ -15,11 +24,11 @@
 }
 
 .premium-gradient {
-  background: linear-gradient(135deg, #F57E29 0%, #FF9E59 100%);
+  background: linear-gradient(135deg, var(--color-conecta-orange) 0%, #FF9E59 100%);
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #F57E29 0%, #D6661E 100%);
+  background: linear-gradient(135deg, var(--color-conecta-orange) 0%, var(--color-conecta-orange-dark) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
