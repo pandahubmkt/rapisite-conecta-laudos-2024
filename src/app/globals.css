@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@layer base {
+  body {
+    @apply text-conecta-gray-900 bg-white;
+  }
+}
+
+.premium-gradient {
+  background: linear-gradient(135deg, #F57E29 0%, #FF9E59 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #F57E29 0%, #D6661E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
