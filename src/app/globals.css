@@ -2,29 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply text-slate-900 bg-white;
-  }
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
 }
 
-@layer components {
-  .premium-gradient {
-    background: linear-gradient(135deg, #F57E29 0%, #FF9E59 100%);
-  }
-
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#F57E29] to-[#D6661E];
-  }
+body {
+  color: #111827;
+  background: white;
 }
 
-@layer utilities {
-  .animate-bounce-slow {
-    animation: bounce 3s ease-in-out infinite;
-  }
+.premium-gradient {
+  background: linear-gradient(135deg, #F57E29 0%, #FF9E59 100%);
 }
 
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+.text-gradient {
+  background: linear-gradient(135deg, #F57E29 0%, #D6661E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
