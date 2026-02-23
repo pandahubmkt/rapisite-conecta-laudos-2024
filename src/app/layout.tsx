@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Conecta Laudos | Telemedicina e Laudos à Distância",
-  description: "Especialistas em Laudos à Distância para Medicina Ocupacional e Clínica. Agilidade, precisão e tecnologia para sua clínica.",
+  title: "Conecta Laudos | Medicina Ocupacional e Clínica",
+  description: "Laudos à distância com precisão e agilidade. Soluções modernas para medicina ocupacional.",
 };
 
 export default function RootLayout({
